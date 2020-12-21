@@ -1,6 +1,7 @@
 var express = require("express");
 var mongoose = require("mongoose");
-var url = "mongodb://127.0.0.1:27017/msqartisan?retryWrites=true&w=majority";
+var url = "mongodb+srv://msqUserImages:msqassociates@cluster0.0jhkr.mongodb.net/imagesDatabase?retryWrites=true&w=majority"
+// var url = "mongodb://127.0.0.1:27017/msqartisan?retryWrites=true&w=majority";
 var app = express();
 var cors = require("cors");
 var bodyParser = require("body-parser");
@@ -25,3 +26,4 @@ app.use(addDataToDatabase);
 app.listen(3000, () => {
   console.log("Currently Listening to port 3000");
 });
+  

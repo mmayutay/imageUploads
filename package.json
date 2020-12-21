@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon C:/Users/2ndyrGroupA/Desktop/imageUpload/api/index.js"
+    "serve": "nodemon ./api/index.js"
   },
   "author": "",
   "license": "ISC",

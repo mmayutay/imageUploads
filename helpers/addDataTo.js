@@ -19,7 +19,13 @@ app.get("/api/getAllData", async (req, res) => {
   } catch (err) {
     res.send(false);
   }
-});
+})
+
+app.post("/api/getUserProfile", (req, res) => {
+  schema.find({name: req.body.name}, (err, result) => {
+    res.send(result)
+  })
+})
 app.get("/", (req, res) => {
   res.send("True");
 });
